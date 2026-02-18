@@ -8,16 +8,15 @@ pipeline {
             }
         }
         
-        stage('Build Docker Image') {
+        stage('Stop Old Containers') {
             steps {
-                sh 'docker build -t flask-app:latest .'
+                sh 'docker-compose -f /var/jenkins_home/workspace/Flask-DevOps-Pipeline/docker-compose.yml down || true'
             }
         }
         
-        stage('Deploy with Docker Compose') {
+        stage('Start New Containers') {
             steps {
-                sh 'docker-compose down || true'
-                sh 'docker-compose up -d --build'
+                sh 'docker-compose -f /var/jenkins_home/workspace/Flask-DevOps-Pipeline/docker-compose.yml up -d'
             }
         }
     }
