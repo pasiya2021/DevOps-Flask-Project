@@ -25,7 +25,7 @@ A fully automated DevOps project demonstrating containerized deployment of a Fla
 
 This project demonstrates a complete DevOps workflow by deploying a two-tier web application (Flask + MySQL) on AWS EC2 using Docker containers and automating the deployment process with Jenkins.
 
-**Live Demo:** `http://YOUR_ELASTIC_IP:5000`
+**Live Demo:** `http://43.204.92.46/:5000`
 
 ---
 
@@ -37,7 +37,6 @@ Developer → GitHub → Jenkins → Docker Build → Deploy → AWS EC2
                                                           └── Jenkins Container (Port 8080)
 ```
 
-[INSERT ARCHITECTURE DIAGRAM IMAGE]
 
 ---
 
@@ -91,7 +90,7 @@ Developer → GitHub → Jenkins → Docker Build → Deploy → AWS EC2
 - Security Group Ports: 22, 80, 5000, 8080
 ```
 
-[INSERT EC2 SCREENSHOT]
+![EC2 Instance](screenshots/ec2-instance.png)
 
 ### **2. Install Dependencies**
 ```bash
@@ -144,8 +143,7 @@ docker compose up -d --build
 2. **Stop Old Containers:** Gracefully stops running containers
 3. **Start New Containers:** Deploys updated application
 
-[INSERT JENKINS PIPELINE SCREENSHOT]
-
+![Jenkins Pipeline Success](screenshots/jenkins-pipeline-success.png)
 ### **Jenkinsfile:**
 ```groovy
 pipeline {
@@ -186,23 +184,22 @@ git push
 
 ### Application Interface
 
-[INSERT FLASK APP SCREENSHOT - EMPTY STATE]
-*Homepage - Initial State*
-
-[INSERT FLASK APP SCREENSHOT - WITH MESSAGES]
+![Flask App - With Messages](screenshots/flask-app-with-messages.png)
 *Homepage - With Messages*
 
 ### Jenkins Dashboard
 
-[INSERT JENKINS DASHBOARD SCREENSHOT]
+![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
 *Jenkins Pipeline Overview*
 
-[INSERT JENKINS BUILD SCREENSHOT]
+![Jenkins Pipeline Success](screenshots/jenkins-pipeline-success.png)
 *Successful Build Stages*
+
+![Jenkins Console Output](screenshots/jenkins-console-output.png)
 
 ### Docker Containers
 
-[INSERT DOCKER PS SCREENSHOT]
+![Docker Containers Running](screenshots/docker-containers.png)
 *Running Containers*
 
 ---
