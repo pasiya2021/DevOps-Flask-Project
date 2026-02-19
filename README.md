@@ -90,7 +90,7 @@ Developer → GitHub → Jenkins → Docker Build → Deploy → AWS EC2
 - Security Group Ports: 22, 80, 5000, 8080
 ```
 
-![EC2 Instance](screenshots/ec2-instance.png)
+![EC2 Instance](screenshorts/ec2-instance.png)
 
 ### **2. Install Dependencies**
 ```bash
@@ -143,7 +143,7 @@ docker compose up -d --build
 2. **Stop Old Containers:** Gracefully stops running containers
 3. **Start New Containers:** Deploys updated application
 
-![Jenkins Pipeline Success](screenshots/jenkins-pipeline-success.png)
+![Jenkins Pipeline Success](screenshorts/jenkins-pipeline-success.png)
 ### **Jenkinsfile:**
 ```groovy
 pipeline {
@@ -184,22 +184,22 @@ git push
 
 ### Application Interface
 
-![Flask App - With Messages](screenshots/flask-app-with-messages.png)
+![Flask App - With Messages](screenshorts/flask-app-with-messages.png)
 *Homepage - With Messages*
 
 ### Jenkins Dashboard
 
-![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
+![Jenkins Dashboard](screenshorts/jenkins-dashboard.png)
 *Jenkins Pipeline Overview*
 
-![Jenkins Pipeline Success](screenshots/jenkins-pipeline-success.png)
+![Jenkins Pipeline Success](screenshorts/jenkins-pipeline-success.png)
 *Successful Build Stages*
 
-![Jenkins Console Output](screenshots/jenkins-console-output.png)
+![Jenkins Console Output](screenshorts/jenkins-console-output.png)
 
 ### Docker Containers
 
-![Docker Containers Running](screenshots/docker-containers.png)
+![Docker Containers Running](screenshorts/docker-containers.png)
 *Running Containers*
 
 ---
