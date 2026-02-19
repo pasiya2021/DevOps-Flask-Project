@@ -143,7 +143,7 @@ docker compose up -d --build
 2. **Stop Old Containers:** Gracefully stops running containers
 3. **Start New Containers:** Deploys updated application
 
-![Jenkins Pipeline Success](screenshorts/jenkins-pipeline-success.png)
+![Jenkins Pipeline Success](screenshorts/jenkins-pipeline-stages.png)
 ### **Jenkinsfile:**
 ```groovy
 pipeline {
